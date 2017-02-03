@@ -1,0 +1,21 @@
+<div>Books</div>
+{{#each model as | product |}}
+	{{#link-to 'description' product.pid}}
+  <div class="product">
+      <div class="pImage">
+            <figure>
+                 <img src="product.pUrl">
+                 
+                 <figcaption>{{product.pName}}   Rs:{{product.pPrice}}</figcaption>
+            </figure>
+      </div>
+
+    <div class="description">
+     <p>{{product.pDescription}}</p>
+    </div>
+    </div>
+    {{/link-to}}
+    {{/each}}
+    
+
+{{yield}}

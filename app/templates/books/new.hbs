@@ -1,0 +1,26 @@
+<h2 id="newBook">New Book</h2>  
+  <div class="form-group">
+    <label for="titleInput">Product id</label>
+    {{input value=title placeholder="Title" class="form-control" id="pid"}}
+  </div>
+  <div class="form-group">
+    <label for="authorInput">Name</label>
+    {{input value=author placeholder="Author" class="form-control" id="pName"}}
+  </div>
+  <div class="form-group">
+    <label for="yearInput">Product description</label>
+    {{input value=pubYear placeholder="Publish Year" class="form-control" id="pDesc"}}
+  </div>
+  <div class="form-group">
+    <label for="authorInput">Image url</label>
+    {{input value=author placeholder="Author" class="form-control" id="pUrl"}}
+  </div>
+  <div class="form-group">
+    <label for="authorInput">price</label>
+    {{input value=author placeholder="Author" class="form-control" id="pPrice"}}
+  </div>
+  <button {{action "publishBook"}} class="btn btn-default">Publish</button>
+
+{{outlet}}
+
+
